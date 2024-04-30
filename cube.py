@@ -12,13 +12,23 @@ k1 = 40
 increment_speed = 0.6
 
 def calculate_x(i, j, k):
-    return j * math.sin(A) * math.sin(B) * math.cos(C) - k * math.cos(A) * math.sin(B) * math.cos(C) + j * math.cos(A) * math.sin(C) + k * math.sin(A) * math.sin(C) + i * math.cos(B) * math.cos(C)
+    return j * math.sin(A) * math.sin(B) * math.cos(C) - k * 
+    math.cos(A) * math.sin(B) * math.cos(C) + j * 
+    math.cos(A) * math.sin(C) + k * 
+    math.sin(A) * math.sin(C) + i * 
+    math.cos(B) * math.cos(C)
 
 def calculate_y(i, j, k):
-    return j * math.cos(A) * math.cos(C) + k * math.sin(A) * math.cos(C) - j * math.sin(A) * math.sin(B) * math.sin(C) + k * math.cos(A) * math.sin(B) * math.sin(C) - i * math.cos(B) * math.sin(C)
+    return j * math.cos(A) * math.cos(C) + k * 
+    math.sin(A) * math.cos(C) - j * 
+    math.sin(A) * math.sin(B) * math.sin(C) + k * 
+    math.cos(A) * math.sin(B) * math.sin(C) - i * 
+    math.cos(B) * math.sin(C)
 
 def calculate_z(i, j, k):
-    return k * math.cos(A) * math.cos(B) - j * math.sin(A) * math.cos(B) + i * math.sin(B)
+    return k * math.cos(A) * math.cos(B) - j * 
+    math.sin(A) * math.cos(B) + i * 
+    math.sin(B)
 
 def calculate_for_surface(cube_x, cube_y, cube_z, ch):
     global x, y, z, ooz, xp, yp, idx
